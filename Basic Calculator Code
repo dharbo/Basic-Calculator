@@ -1,0 +1,78 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+    int choice;
+    double num1, num2;
+
+    cout << setfill('-') << setw(6) << "-" << "Basic Calculator" << setfill('-') << setw(6) << "-" << endl;
+    cout << setfill(' ');
+    cout << "1. \t Addition" << endl;
+    cout << "2. \t Subtraction" << endl;
+    cout << "3. \t Multiplication" << endl;
+    cout << "4. \t Division" << endl;
+    cout << "5. \t Turn off" << endl;
+    cout << "What operator would you like to use? ", cin >> choice;
+
+    while(choice != 5)
+    {
+            if(choice == 1)
+            {
+                cout << "Enter two numbers: ", cin >> num1 >> num2;
+
+                double add = (num1 + num2);
+
+                cout << num1 << " + " << num2 << " = " << add << endl;
+
+                cout << "What operator would you like to use? ", cin >> choice;
+            }
+
+            else if(choice == 2)
+            {
+                cout << "Enter two numbers: ", cin >> num1 >> num2;
+
+                double subtract = (num1 - num2);
+
+                cout << num1 << " - " << num2 << " = " << subtract << endl;
+
+                cout << "What operator would you like to use? ", cin >> choice;
+            }
+            
+            else if(choice == 3)
+            {
+                cout << "Enter two numbers: ", cin >> num1 >> num2;
+
+                double multiply = (num1 * num2);
+
+                cout << num1 << " * " << num2 << " = " << multiply << endl;
+
+                cout << "What operator would you like to use? ", cin >> choice;
+            }
+
+            else if(choice == 4)
+            {
+                cout << "Enter two numbers: ", cin >> num1 >> num2;
+
+                double divide = (num1 / num2);
+
+                cout << num1 << " / " << num2 << " = " << divide << endl;
+
+                cout << "What operator would you like to use? ", cin >> choice;
+            }
+            else
+            {
+                cout << "Incorrect input, try again: ", cin >> choice;
+            }
+            
+    }
+  
+    if(choice == 5)
+    {        
+        cout << "Turning off..." << endl;
+    }
+
+    return 0;
+}
