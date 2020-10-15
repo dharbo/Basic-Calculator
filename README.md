@@ -1,2 +1,2 @@
 # Basic-Calculator
-A calculator that include a menu, which includes the operators +, -, *, and /. 
+A calculator that includes a menu with what operators the user would like to use.
